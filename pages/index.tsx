@@ -8,6 +8,7 @@ import WhoWeAre from '../components/WhoWeAre'
 import Faq from '../components/Faq'
 import Activity from '../components/Activity'
 import Footer from '../components/Footer';
+import Roadmap from '../components/Roadmap'
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
       <Hero />
       <WhoWeAre />
       <Activity />
+      <Roadmap />
       <Faq />
 
       <Footer />
