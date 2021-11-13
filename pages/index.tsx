@@ -3,12 +3,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-import Hero from '../components/Hero'
-import WhoWeAre from '../components/WhoWeAre'
-import Faq from '../components/Faq'
 import Activity from '../components/Activity'
+import Faq from '../components/Faq'
 import Footer from '../components/Footer';
+import Hero from '../components/Hero'
 import Roadmap from '../components/Roadmap'
+import WhoWeAre from '../components/WhoWeAre'
 
 const Home: NextPage = () => {
   return (
