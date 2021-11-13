@@ -39,59 +39,52 @@ const Roadmap: FC = () => {
           </Fragment>
         </Section>
 
-        <div className="grid gap-5 grid-cols-2">
-          <Tile
-            icon={
-              <UserGroupIcon className="w-12 mr-3 fill-current inline text-blue-400" />
-            }
-            title={daoTitle}
-            description={genericDescription}
+      <div className="grid gap-5 grid-cols-2">
+        <Tile
+          color="blue"
+          icon={<UserGroupIcon className="w-8 lg:w-14 inline text-white-900"/>}
+          title={daoTitle}
+          description={genericDescription}
           />
-          <Tile
-            icon={
-              <CurrencyDollarIcon className="w-12 mr-3 fill-current inline text-green-400" />
-            }
-            title={treasuryTitle}
-            description={genericDescription}
+        <Tile
+          color="green"
+          icon={<CurrencyDollarIcon className="w-8 lg:w-14 inline text-white-900" />}
+          title={treasuryTitle}
+          description={genericDescription}
           />
-          <Tile
-            icon={
-              <ShoppingCartIcon className="w-12 mr-3 fill-current inline text-red-400" />
-            }
-            title={storeTitle}
-            description={genericDescription}
+        <Tile
+          color="red"
+          icon={<ShoppingCartIcon className="w-8 lg:w-14 inline text-white-900" />}
+          title={storeTitle}
+          description={genericDescription}
           />
-          <Tile
-            icon={
-              <HandIcon className="w-12 mr-3 fill-current inline text-purple-400" />
-            }
-            title={votingTitle}
-            description={genericDescription}
-            incomplete
+        <Tile
+          color="purple"
+          icon={<HandIcon className="w-8 lg:w-14 inline text-white-900" />}
+          title={votingTitle}
+          description={genericDescription}
+          incomplete
           />
-          <Tile
-            icon={
-              <SparklesIcon className="w-12 mr-3 fill-current inline text-yellow-400" />
-            }
-            title={katTitle}
-            description={genericDescription}
-            incomplete
+        <Tile
+          color="yellow"
+          icon={<SparklesIcon className="w-8 lg:w-14 inline text-white-900" />}
+          title={katTitle}
+          description={genericDescription}
+          incomplete
           />
-          <Tile
-            icon={
-              <TableIcon className="w-12 mr-3 fill-current inline text-green-200" />
-            }
-            title={marketPlaceTitle}
-            description={genericDescription}
-            incomplete
+        <Tile
+          color="pink"
+          icon={<TableIcon className="w-8 lg:w-14 inline text-white-900" />}
+          title={marketPlaceTitle}
+          description={genericDescription}
+          incomplete
           />
-          <Tile
-            icon={
-              <GlobeIcon className="w-12 mr-3 fill-current inline text-indigo-600" />
-            }
-            title={tbaTitle}
-            description={genericDescription}
-            incomplete
+        <Tile
+          color="indigo"
+          icon={<GlobeIcon className="w-8 lg:w-14 inline text-white-900" />}
+          title={tbaTitle}
+          description={genericDescription}
+          incomplete
           />
         </div>
       </div>
