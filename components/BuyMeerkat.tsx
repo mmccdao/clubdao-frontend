@@ -6,11 +6,11 @@ import markets from "../data/markets.json";
 import meerkats from "../data/meerkats.json";
 
 import IMeerkat from "../types/IMeerkat";
-import IMarket from "../types/IMarket";
+import Market from "../types/Market";
 
 import BuyMeerkatItem from "../components/BuyMeerkatItem";
 
-interface IMarketDirectory extends Record<string, IMarket> {}
+interface IMarketDirectory extends Record<string, Market> {}
 
 const BuyMeerkat: FC = () => {
   const marketDirectory: IMarketDirectory = markets
