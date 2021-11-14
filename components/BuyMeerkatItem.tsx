@@ -3,12 +3,12 @@ import Link from "next/link";
 import React, { FC, Fragment, useState, useEffect } from "react";
 
 import IMeerkat from "../types/IMeerkat";
-import IMarket from "../types/IMarket";
+import Market from "../types/Market";
 
 interface Props {
   key: string,
   meerkat: IMeerkat,
-  market: IMarket,
+  market: Market,
 }
 
 const BuyMeerkatItem: FC<Props> = ({key, meerkat, market}) => {
