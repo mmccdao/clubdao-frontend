@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 
 import Hero from '../components/Hero'
 import WhoWeAre from '../components/WhoWeAre'
+import Faq from '../components/Faq'
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
 
       <Hero />
       <WhoWeAre />
+      <Faq />
 
     </div>
   )
