@@ -9,7 +9,6 @@ interface IMeerkat {
   name: string;
   image: string;
   buy: IBuyMeerkat;
-  // market: IMarket
 }
 
 export default IMeerkat;
