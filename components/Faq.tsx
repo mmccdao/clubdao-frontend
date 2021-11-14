@@ -18,7 +18,9 @@ const Item: FC<{ title: String; children: any }> = ({ title, children }) => {
         className="flex text-left items-center justify-between w-full p-4 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <p className="font-semibold text-left text-xl text-gray-300">{title}</p>
+        <p className="font-semibold text-left text-2xl text-gray-300">
+          {title}
+        </p>
         <svg
           viewBox="0 0 24 24"
           className={`h-4 w-4 text-gray-400 transform transition-transform duration-300 ${
@@ -48,7 +50,7 @@ const Item: FC<{ title: String; children: any }> = ({ title, children }) => {
 const Faq: FC = () => {
   return (
     <div id="faq" className="bg-gray-800">
-      <div className="container px-6 pb-16 max-w-screen-lg mx-auto">
+      <div className="container px-6 pb-16 max-w-screen-xl mx-auto">
         <Section heading={heading} subheading={subheading}>
           <Fragment></Fragment>
         </Section>
