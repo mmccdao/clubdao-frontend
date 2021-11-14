@@ -21,11 +21,10 @@ const Hero: FC = () => {
               alt=""
               layout="fill"
             />
-
             <div className="lg:hidden absolute bottom-0 w-screen h-screen bg-gradient-to-t from-black"></div>
           </div>
-          <div className="absolute lg:static lg:h- left-1/2 lg:left-0 bottom-4 transform -translate-x-1/2 lg:translate-x-0 flex flex-col lg:flex-row max-w-xl lg:max-w-screen-xl mx-auto xl:pr-32 justify-end  text-center lg:text-left">
-            <div className="lg:mb-16 lg:pr-5 lg:max-w-lg lg:mb-0">
+          <div className="absolute lg:static left-1/2 lg:left-0 bottom-4 transform -translate-x-1/2 lg:translate-x-0 flex flex-col lg:flex-row lg: lg:max-w-screen-xl mx-auto xl:pr-32 justify-end  text-center lg:text-left">
+            <div className="w-screen px-6 lg:mb-16 lg:pr-5 lg:max-w-lg lg:mb-0">
               <div className="max-w-xl mb-6">
                 <div>
                   <p className="inline-block py-px mb-4 text-4xl text-5xl font-extralight tracking-wider text-gray-100 rounded-full bg-teal-accent-400">
@@ -42,14 +41,14 @@ const Hero: FC = () => {
                 </p>
               </div>
               <div className="my-2">
-                  <h3 className="text-yellow-300 mb-4 font-bold text-lg text-gray-300 md:text-2xl">
+                  <h3 className="text-yellow-200 lg:text-yellow-300 mb-4 font-bold text-lg text-gray-300 md:text-2xl">
                     Already an MMCC holder?
                   </h3>
                   <p className="text-lg text-gray-300 md:text-2xl">
                     Take the next step in ownership and share your vision with
                     the community.
                   </p>
-                <div className="mt-12">
+                <div className="mt-8">
                   <Link href="https://discord.gg/UcWSDk88ZF">
                     <a className="border-2 p-4 px-8 rounded-full items-center justify-center w-full lg:h-12 lg:px-12 font-semibold text-xl lg:text-2xl tracking-wide text-gray-100 hover:text-gray-900 transition duration-200 rounded shadow-md hover:bg-gray-100 focus:shadow-outline focus:outline-none border-gray-300">
                       Join the DAO
@@ -58,7 +57,7 @@ const Hero: FC = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flew-grow lg:flex-col mt-12 lg:mt-0 lg:ml-12 lg:pl-4 space-x-8 lg:space-x-0 lg:space-y-8 justify-center">
+            <div className="flex flew-grow lg:flex-col mt-8 lg:mt-0 lg:ml-12 lg:pl-4 space-x-8 lg:space-x-0 lg:space-y-8 justify-center">
               <Link href="https://discord.gg/UcWSDk88ZF">
                 <a target="_blank">
                   <Image
