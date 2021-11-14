@@ -27,7 +27,7 @@ const Hero: FC = () => {
             <div className="w-screen px-6 lg:mb-16 lg:pr-5 lg:max-w-lg lg:mb-0">
               <div className="max-w-xl mb-6">
                 <div>
-                  <p className="inline-block py-px mb-4 text-4xl text-5xl font-extralight tracking-wider text-gray-100 rounded-full bg-teal-accent-400">
+                  <p className="inline-block py-px mb-4 text-4xl text-5xl font-extralight tracking-wider text-gray-100 rounded-full">
                     Meerkat Millionaire
                   </p>
                 </div>
