@@ -40,7 +40,7 @@ const Hero: FC = () => {
                   space together.
                 </p>
               </div>
-              <div className="my-2">
+              <div className="my-2 lg:mt-8">
                   <h3 className="text-yellow-200 lg:text-yellow-300 mb-4 font-bold text-lg text-gray-300 md:text-2xl">
                     Already an MMCC holder?
                   </h3>
@@ -48,7 +48,7 @@ const Hero: FC = () => {
                     Take the next step in ownership and share your vision with
                     the community.
                   </p>
-                <div className="mt-8">
+                <div className="mt-8 lg:mt-12">
                   <Link href="https://discord.gg/UcWSDk88ZF">
                     <a className="border-2 p-4 px-8 rounded-full items-center justify-center w-full lg:h-12 lg:px-12 font-semibold text-xl lg:text-2xl tracking-wide text-gray-100 hover:text-gray-900 transition duration-200 rounded shadow-md hover:bg-gray-100 focus:shadow-outline focus:outline-none border-gray-300">
                       Join the DAO
