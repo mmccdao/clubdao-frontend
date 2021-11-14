@@ -10,12 +10,12 @@ interface Props {
 const Section = (props: Props) => {
   const { heading, subheading, children } = props;
   return (
-    <div className="flex flex-col py-8">
-      <div>
+    <div className="flex flex-col lg:flex-row py-8">
+      <div className="lg:w-2/5">
         <SectionHeading>{heading}</SectionHeading>
+        <p className="text-3xl font-semibold lg:text-5xl lg:mr-6">{subheading}</p>
       </div>
-      <div className="flex">
-        <p className="text-2xl w-2/5 xl:flex-shrink flex-grow flex-shrink-0 lg:text-3xl mr-6">{subheading}</p>
+      <div className="flex-1 pt-4">
         {children}
         </div>
     </div>
