@@ -11,7 +11,7 @@ interface Props {
   market: IMarket,
 }
 
-const BuyMeerkatItem: FC<{key: string, meerkat: IMeerkat, market: IMarket }> = ({key, meerkat, market}) => {
+const BuyMeerkatItem: FC<Props> = ({key, meerkat, market}) => {
   return (
     <li key={key} className="z-10 lg:py-4 flex flex-col items-center">
       <Link href={meerkat.market.url}>
