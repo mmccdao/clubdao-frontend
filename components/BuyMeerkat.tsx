@@ -15,7 +15,7 @@ interface IMarketDirectory extends Record<string, IMarket> {}
 const BuyMeerkat: FC = () => {
   const marketDirectory: IMarketDirectory = markets
   return (
-    <div className="py-12 z-50 bg-pink-600">
+    <div className="py-12 z-50 bg-pink-800">
       <div className="px-4 mb-8 flex flex-col">
         <h2 className="font-semibold text-3xl lg:text-4xl text-center">
           Still need a meerkat ?
