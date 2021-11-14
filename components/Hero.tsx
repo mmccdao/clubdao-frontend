@@ -41,12 +41,21 @@ const Hero: FC = () => {
                   space together.
                 </p>
               </div>
-              <div className="mt-12">
-                <Link href="https://discord.gg/UcWSDk88ZF">
-                  <a className="border-2 p-4 px-8 rounded-full items-center justify-center w-full lg:h-12 lg:px-12 font-semibold text-xl lg:text-2xl tracking-wide text-gray-100 hover:text-gray-900 transition duration-200 rounded shadow-md hover:bg-gray-100 focus:shadow-outline focus:outline-none border-gray-300">
-                    Join the DAO
-                  </a>
-                </Link>
+              <div className="my-2">
+                  <h3 className="text-yellow-300 mb-4 font-bold text-lg text-gray-300 md:text-2xl">
+                    Already an MMCC holder?
+                  </h3>
+                  <p className="text-lg text-gray-300 md:text-2xl">
+                    Take the next step in ownership and share your vision with
+                    the community.
+                  </p>
+                <div className="mt-12">
+                  <Link href="https://discord.gg/UcWSDk88ZF">
+                    <a className="border-2 p-4 px-8 rounded-full items-center justify-center w-full lg:h-12 lg:px-12 font-semibold text-xl lg:text-2xl tracking-wide text-gray-100 hover:text-gray-900 transition duration-200 rounded shadow-md hover:bg-gray-100 focus:shadow-outline focus:outline-none border-gray-300">
+                      Join the DAO
+                    </a>
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="flex flew-grow lg:flex-col mt-12 lg:mt-0 lg:ml-12 lg:pl-4 space-x-8 lg:space-x-0 lg:space-y-8 justify-center">
