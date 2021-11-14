@@ -27,7 +27,7 @@ const BuyMeerkat: FC = () => {
       <div className="">
         <ul className="flex flex-row px-8 xl:pl-0 space-x-8 justify-start xl:justify-center overflow-x-scroll no-scrollbar">
           {meerkats.map((meerkat) => (
-            <BuyMeerkatItem key={meerkat.name} meerkat={meerkat} market={marketDirectory[meerkat.buy.market]}/>
+            <BuyMeerkatItem key={meerkat.name} meerkat={meerkat} market={marketDirectory[meerkat.market.id]}/>
           ))}
         </ul>
       </div>

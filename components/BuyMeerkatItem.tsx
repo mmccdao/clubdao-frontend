@@ -14,7 +14,7 @@ interface Props {
 const BuyMeerkatItem: FC<{key: string, meerkat: IMeerkat, market: IMarket }> = ({key, meerkat, market}) => {
   return (
     <li key={key} className="z-10 lg:py-4 flex flex-col items-center">
-      <Link href={meerkat.buy.url}>
+      <Link href={meerkat.market.url}>
         <a
           target="_blank"
           className="block rounded-md border-8 border-gray-100 p-0 w-72 h-72"
