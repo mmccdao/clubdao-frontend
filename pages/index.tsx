@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 import Hero from '../components/Hero'
+import WhoWeAre from '../components/WhoWeAre'
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Hero />
+      <WhoWeAre />
 
       <main className={styles.main}>
         <h1 className={styles.title}>
