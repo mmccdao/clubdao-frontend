@@ -1,6 +1,39 @@
 import Link from "next/link";
 import React, { FC, Fragment, useState, useEffect } from "react";
 
+const menu = [
+  {
+    ariaLabel: "Who We Are",
+    title: "Who We Are",
+    text: "Who We Are",
+    href: "/#who-we-are",
+  },
+  {
+    ariaLabel: "Activities",
+    title: "Activities",
+    text: "Activities",
+    href: "/#activities",
+  },
+  {
+    ariaLabel: "Roadmap",
+    title: "Roadmap",
+    text: "Roadmap",
+    href: "/#roadmap",
+  },
+  {
+    ariaLabel: "FAQ",
+    title: "FAQ",
+    text: "FAQ",
+    href: "/#faq",
+  },
+  {
+    ariaLabel: "Team",
+    title: "Team",
+    text: "Team",
+    href: "/#team",
+  },
+];
+
 const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -8,7 +41,7 @@ const Header: FC = () => {
     <div className="bg-black sticky top-0 z-50">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
-          <Link href="/">
+          <Link href="/#home">
             <a
               aria-label="ClubDAO"
               title="ClubDAO"
@@ -21,62 +54,20 @@ const Header: FC = () => {
             </a>
           </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex">
-            <li>
-              <Link href="#who-we-are">
-                <a
-                  aria-label="Who We Are"
-                  title="Who We Are"
-                  className="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-gray-400"
-                >
-                  Who We Are
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="#activities">
-                <a
-                  aria-label="Activities"
-                  title="Activities"
-                  className="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-gray-400"
-                >
-                  Activities
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="#roadmap">
-                <a
-                  aria-label="Roadmap"
-                  title="Roadmap"
-                  className="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-gray-400"
-                >
-                  Roadmap
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="#faq">
-                <a
-                  aria-label="FAQ"
-                  title="FAQ"
-                  className="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-gray-400"
-                >
-                  FAQ
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="#team">
-                <a
-                  aria-label="Team"
-                  title="Team"
-                  className="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-gray-400"
-                >
-                  Team
-                </a>
-              </Link>
-          </li>
-        </ul>
+            {menu.map((item) => (
+              <li key={item.title}>
+                <Link href={item.href}>
+                  <a
+                    aria-label={item.ariaLabel}
+                    title={item.title}
+                    className="font-medium text-xl tracking-wide text-gray-100 transition-colors duration-200 hover:text-gray-400"
+                  >
+                    {item.text}
+                  </a>
+                </Link>
+              </li>
+            ))}
+          </ul>
           <div className="lg:hidden">
             <button
               aria-label="Open Menu"
@@ -102,7 +93,7 @@ const Header: FC = () => {
             </button>
             {isMenuOpen && (
               <div className="absolute top-0 left-0 w-full">
-                <div className="p-5 bg-white border rounded shadow-sm">
+                <div className="p-5 bg-gray-900 border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
                       <Link href="/">
@@ -112,7 +103,7 @@ const Header: FC = () => {
                           className="inline-flex items-center"
                         >
                           {/* TODO Add logo (SVG) */}
-                          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+                          <span className="ml-2 text-xl font-bold tracking-wide text-gray-200 uppercase">
                             ClubDAO
                           </span>
                         </a>
@@ -125,7 +116,7 @@ const Header: FC = () => {
                         className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                         onClick={() => setIsMenuOpen(false)}
                       >
-                        <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
+                        <svg className="w-5 text-gray-400" viewBox="0 0 24 24">
                           <path
                             fill="currentColor"
                             d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
@@ -136,61 +127,20 @@ const Header: FC = () => {
                   </div>
                   <nav>
                     <ul className="space-y-4">
-                      <li>
-                        <Link href="#who-we-are">
-                          <a
-                            aria-label="Who We Are"
-                            title="Who We Are"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            Who We Are
-                          </a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#activities">
-                          <a
-                            aria-label="Activities"
-                            title="Activities"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            Activities
-                          </a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#roadmap">
-                          <a
-                            aria-label="Roadmap"
-                            title="Roadmap"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            Roadmap
-                          </a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#faq">
-                          <a
-                            aria-label="FAQ"
-                            title="FAQ"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            FAQ
-                          </a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#team">
-                          <a
-                            aria-label="Team"
-                            title="Team"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            Team
-                          </a>
-                        </Link>
-                    </li>
+                      {menu.map((item) => (
+                        <li key={item.title}>
+                          <Link href={item.href}>
+                            <a
+                              aria-label={item.ariaLabel}
+                              title={item.title}
+                              className="font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-gray-400"
+                              onClick={() => setIsMenuOpen(false)}
+                            >
+                              {item.text}
+                            </a>
+                          </Link>
+                        </li>
+                      ))}
                     </ul>
                   </nav>
                 </div>
