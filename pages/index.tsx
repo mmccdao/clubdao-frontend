@@ -18,11 +18,6 @@ const Home: NextPage = () => {
       <Hero />
       <WhoWeAre />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Join ClubDAO
-        </h1>
-      </main>
     </div>
   )
 }
