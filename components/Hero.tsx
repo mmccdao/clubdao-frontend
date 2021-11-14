@@ -21,18 +21,19 @@ const Hero: FC = () => {
               alt=""
               layout="fill"
             />
-            <div className="lg:hidden absolute bottom-0 w-screen h-screen bg-gradient-to-t from-black"></div>
+            <div className="lg:hidden absolute bottom-0 w-screen opacity-80 h-screen bg-gradient-to-t from-black"></div>
           </div>
-          <div className="absolute lg:static left-1/2 lg:left-0 bottom-4 transform -translate-x-1/2 lg:translate-x-0 flex flex-col lg:flex-row lg: lg:max-w-screen-xl mx-auto xl:pr-32 justify-end  text-center lg:text-left">
-            <div className="w-screen px-6 lg:mb-16 lg:pr-5 lg:max-w-lg lg:mb-0">
-              <div className="max-w-xl mb-6">
-                <div>
-                  <p className="inline-block py-px mb-4 text-4xl text-5xl font-extralight tracking-wider text-gray-100 rounded-full bg-teal-accent-400">
+          <div className="w-screen lg:w-full items-center absolute lg:static left-1/2 lg:left-0 bottom-4 transform -translate-x-1/2 lg:translate-x-0 flex flex-col lg:flex-row lg:max-w-screen-xl mx-auto xl:pr-32 justify-end text-center lg:text-left">
+            <div className="px-8 lg:px-0 lg:mb-16 lg:pr-5 lg:max-w-lg lg:mb-0">
+              <div>
+                <h2 className="mb-6">
+                  <span className="inline-block py-px mb-4 text-4xl text-5xl font-extralight tracking-wider text-gray-100 rounded-full">
                     Meerkat Millionaire
-                  </p>
-                </div>
-                <h2 className="max-w-lg mb-6 font-sans font-bold text-4xl lg:text-7xl tracking-tight text-gray-100 uppercase sm:leading-none">
-                  Club DAO
+                  </span>
+                  <br />
+                  <span className="font-sans font-bold text-4xl lg:text-7xl tracking-tight text-gray-100 uppercase sm:leading-none">
+                    Club DAO
+                  </span>
                 </h2>
                 <p className="text-lg text-gray-300 md:text-2xl">
                   A community-owned and operated organization for Meerkats to
@@ -41,13 +42,13 @@ const Hero: FC = () => {
                 </p>
               </div>
               <div className="my-2 lg:mt-8">
-                  <h3 className="text-yellow-200 lg:text-yellow-300 mb-4 font-bold text-lg text-gray-300 md:text-2xl">
-                    Already an MMCC holder?
-                  </h3>
-                  <p className="text-lg text-gray-300 md:text-2xl">
-                    Take the next step in ownership and share your vision with
-                    the community.
-                  </p>
+                <h3 className="text-yellow-200 lg:text-yellow-300 mb-4 font-bold text-lg text-gray-300 md:text-2xl">
+                  Already an MMCC holder?
+                </h3>
+                <p className="text-lg text-gray-300 md:text-2xl">
+                  Take the next step in ownership and share your vision with the
+                  community.
+                </p>
                 <div className="mt-8 lg:mt-12">
                   <Link href="https://discord.gg/UcWSDk88ZF">
                     <a className="border-2 p-4 px-8 rounded-full items-center justify-center w-full lg:h-12 lg:px-12 font-semibold text-xl lg:text-2xl tracking-wide text-gray-100 hover:text-gray-900 transition duration-200 rounded shadow-md hover:bg-gray-100 focus:shadow-outline focus:outline-none border-gray-300">
