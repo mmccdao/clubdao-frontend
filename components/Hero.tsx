@@ -42,7 +42,7 @@ const Hero: FC = () => {
                 </p>
               </div>
               <div className="my-2 lg:mt-8">
-                <h3 className="text-yellow-200 lg:text-yellow-300 mb-4 font-bold text-lg text-gray-300 md:text-2xl">
+                <h3 className="text-yellow-300 lg:text-yellow-300 mb-3 font-bold text-lg text-gray-300 md:text-2xl">
                   Already an MMCC holder?
                 </h3>
                 <p className="text-lg text-gray-300 md:text-2xl">
