@@ -1,15 +1,12 @@
-import IMarket from "./IMarket"
-
-interface IBuyMeerkat {
-  market: string;
+interface Market {
+  id: string;
   url: string;
 }
 
 interface IMeerkat {
   name: string;
   image: string;
-  buy: IBuyMeerkat;
-  // market: IMarket
+  market: Market;
 }
 
 export default IMeerkat;
