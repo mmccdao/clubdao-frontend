@@ -4,6 +4,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 import Hero from '../components/Hero'
+import WhoWeAre from '../components/WhoWeAre'
+import Faq from '../components/Faq'
 
 const Home: NextPage = () => {
   return (
@@ -15,12 +17,9 @@ const Home: NextPage = () => {
       </Head>
 
       <Hero />
+      <WhoWeAre />
+      <Faq />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Join ClubDAO
-        </h1>
-      </main>
     </div>
   )
 }
