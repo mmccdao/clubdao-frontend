@@ -38,7 +38,7 @@ const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-black sticky top-0 z-50">
+    <div className="bg-black fixed w-full top-0 z-50">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <Link href="/#home">
