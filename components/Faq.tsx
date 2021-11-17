@@ -49,7 +49,7 @@ const Item: FC<{ title: String; children: any }> = ({ title, children }) => {
 
 const Faq: FC = () => {
   return (
-    <div id="faq" className="bg-gray-800">
+    <div id="faq" className="bg-gray-900">
       <div className="container px-6 pb-16 max-w-screen-xl mx-auto">
         <Section heading={heading} subheading={subheading}>
           <Fragment></Fragment>
