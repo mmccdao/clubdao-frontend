@@ -13,8 +13,8 @@ const Hero: FC = () => {
       <div id="home" className="min-h-screen">
         <Header />
 
-        <div className="static flex flex-col-reverse px-4 py-16 mx-auto lg:block lg:flex-col lg:py-32 md:px-8 sm:max-w-xl md:max-w-full">
-          <div className="z-0 flex justify-center h-full overflow-hidden lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center">
+        <div className="static flex flex-col-reverse px-4 py-16 mx-auto lg:block lg:flex-col lg:pt-48 md:px-8 sm:max-w-xl md:max-w-full">
+          <div className="z-0 flex justify-center h-full overflow-hidden pt-32 lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center">
             <Image
               src="/mmcc-og-4896-nogb.png"
               className="z-0 object-cover object-right w-full h-auto lg:w-auto lg:h-full"
