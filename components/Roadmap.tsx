@@ -18,7 +18,7 @@ const treasuryTitle = "Treasury";
 const storeTitle = "MMCC merch store";
 const votingTitle = "On-chain voting mechanism";
 const katTitle = "$KAT token airdrop";
-const marketPlaceTitle = "Meerkatplace for secondary sales and escrow trade";
+const marketPlaceTitle = "Meerkatplace and escrow trade";
 const genericDescription =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit soluta quod vitae.";
 
