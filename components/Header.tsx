@@ -26,12 +26,6 @@ const menu = [
     text: "FAQ",
     href: "/#faq",
   },
-  {
-    ariaLabel: "Team",
-    title: "Team",
-    text: "Team",
-    href: "/#team",
-  },
 ];
 
 const Header: FC = () => {
