@@ -11,6 +11,8 @@ import {
 import Section from "./Section";
 import Tile from "./Tile";
 
+import styles from '../styles/Home.module.css'
+
 const heading = "Roadmap";
 const subheading = "Developed by decentralized teams";
 const daoTitle = "ClubDAO";
@@ -24,7 +26,8 @@ const genericDescription =
 
 const Roadmap: FC = () => {
   return (
-    <div id="roadmap" className="bg-gray-900">
+    <div className="bg-gray-900">
+    <a id="roadmap" className={styles.anchor}></a>
       <div className="container px-6 pb-16 max-w-screen-xl mx-auto">
         <Section heading={heading} subheading={subheading}>
           <Fragment>
