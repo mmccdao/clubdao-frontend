@@ -65,7 +65,10 @@ const Faq: FC = () => {
               title={item.question}
             >
               {item.answer.split("\n").map((paragraph) => (
-                <p key={Buffer.from(paragraph).toString("base64")} className="mb-2">
+                <p
+                  key={Buffer.from(paragraph).toString("base64")}
+                  className="mb-2"
+                >
                   {paragraph}
                 </p>
               ))}
