@@ -17,8 +17,8 @@ const Hero: FC = () => {
           <div className="z-0 flex justify-center h-full overflow-hidden pt-32 lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center">
             <Image
               src="/mmcc-og-4896-nogb.png"
-              className="z-0 object-cover object-right w-full h-auto lg:w-auto lg:h-full"
-              alt=""
+              className="z-0 object-cover object-top w-full h-auto transform lg:transform-none -translate-x-1/2 translate-y-24 scale-90 lg:w-auto lg:h-full"
+              alt="Featured Meerkat"
               layout="fill"
             />
             <div className="lg:hidden absolute bottom-0 w-screen opacity-80 h-screen bg-gradient-to-t from-black"></div>
