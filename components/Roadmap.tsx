@@ -12,7 +12,7 @@ import Section from "./Section";
 import Tile from "./Tile";
 
 const heading = "Roadmap";
-const subheading = "Objective-driven projects";
+const subheading = "Developed by decentralized teams";
 const daoTitle = "Launch DAO";
 const treasuryTitle = "Fund the treasury";
 const storeTitle = "Launch MMCC merch store";
@@ -26,15 +26,15 @@ const genericDescription =
 
 const Roadmap: FC = () => {
   return (
-    <div id="faq" className="bg-gray-900">
+    <div id="roadmap" className="bg-gray-900">
       <div className="container px-6 pb-16 max-w-screen-xl mx-auto">
         <Section heading={heading} subheading={subheading}>
           <Fragment>
             <p className="text-gray-400 text-lg lg:text-2xl">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Distinctio suscipit, veniam voluptates culpa magni porro cum
-              temporibus molestiae vel laudantium architecto, ea facilis quia,
-              animi eligendi repudiandae dolor alias earum.
+              A summary of ClubDAO objectives that will be delivered across
+              multiple releases. Here you will find an overview of the goals, as
+              well as descriptions of the main features, links to associated
+              projects and partenerships and status updates.
             </p>
           </Fragment>
         </Section>
