@@ -2,6 +2,8 @@ import React, { FC, Fragment, useState } from "react";
 
 import Section from "./Section";
 
+import styles from "../styles/Home.module.css";
+
 import faq from "../data/faq.json";
 
 const heading = "FAQ";
@@ -49,7 +51,8 @@ const Item: FC<{ title: String; children: any }> = ({ title, children }) => {
 
 const Faq: FC = () => {
   return (
-    <div id="faq" className="bg-gray-900">
+    <div className="bg-gray-800">
+      <a id="faq" className={styles.anchor}></a>
       <div className="container px-6 pb-16 max-w-screen-xl mx-auto">
         <Section heading={heading} subheading={subheading}>
           <Fragment></Fragment>

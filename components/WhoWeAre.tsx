@@ -1,13 +1,15 @@
 import React, { FC, Fragment } from "react";
-
 import Section from "./Section";
+
+import styles from '../styles/Home.module.css'
 
 const heading = "Who We Are";
 const subheading = "Building our future together";
 
 const WhoWeAre: FC = () => {
   return (
-    <div id="who-we-are" className="bg-gray-900">
+    <div className="bg-gray-900">
+      <a id="who-we-are" className={styles.anchor}></a>
       <div className="container px-6 max-w-screen-xl mx-auto">
         <Section heading={heading} subheading={subheading}>
           <Fragment>
