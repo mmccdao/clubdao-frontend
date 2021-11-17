@@ -13,14 +13,12 @@ import Tile from "./Tile";
 
 const heading = "Roadmap";
 const subheading = "Developed by decentralized teams";
-const daoTitle = "Launch DAO";
-const treasuryTitle = "Fund the treasury";
-const storeTitle = "Launch MMCC merch store";
-const votingTitle = "Implement on-chain voting mechanism";
-const katTitle = "Develop and airdrop $KAT token";
-const marketPlaceTitle =
-  "Launch Meerkatplace for secondary sales and escrow trade";
-const tbaTitle = "More developments TBA";
+const daoTitle = "ClubDAO";
+const treasuryTitle = "Treasury";
+const storeTitle = "MMCC merch store";
+const votingTitle = "On-chain voting mechanism";
+const katTitle = "$KAT token airdrop";
+const marketPlaceTitle = "Meerkatplace for secondary sales and escrow trade";
 const genericDescription =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit soluta quod vitae.";
 
@@ -31,10 +29,10 @@ const Roadmap: FC = () => {
         <Section heading={heading} subheading={subheading}>
           <Fragment>
             <p className="text-gray-400 text-lg lg:text-2xl">
-              A summary of ClubDAO objectives that will be delivered across
+              A summary of ClubDAO projects that will be delivered across
               multiple releases. Here you will find an overview of the goals, as
               well as descriptions of the main features, links to associated
-              projects and partenerships and status updates.
+              partenerships and status updates.
             </p>
           </Fragment>
         </Section>
@@ -79,13 +77,6 @@ const Roadmap: FC = () => {
           <Tile
             color="bg-pink-400"icon={<TableIcon className="w-8 lg:w-10 inline text-white-900" />}
             title={marketPlaceTitle}
-            description={genericDescription}
-            image="/placeholder.png"
-            incomplete
-          />
-          <Tile
-            color="bg-indigo-400"icon={<GlobeIcon className="w-8 lg:w-10 inline text-white-900" />}
-            title={tbaTitle}
             description={genericDescription}
             image="/placeholder.png"
             incomplete
