@@ -58,30 +58,30 @@ const Hero: FC = () => {
                   </Link>
                 </div>
               </div>
-            </div>
-            <div className="flex flew-grow lg:flex-col mt-8 lg:mt-0 lg:ml-12 lg:pl-4 space-x-8 lg:space-x-0 lg:space-y-8 justify-center">
-              <Link href="https://discord.gg/UcWSDk88ZF">
-                <a target="_blank">
-                  <Image
-                    src="/discord.svg"
-                    className="object-cover object-right w-full h-auto lg:w-auto lg:h-full"
-                    alt="discord"
-                    width="28px"
-                    height="28px"
-                  />
-                </a>
-              </Link>
-              <Link href="https://twitter.com/mmcclubdao">
-                <a target="_blank">
-                  <Image
-                    src="/twitter.svg"
-                    className="object-cover object-right w-full h-auto lg:w-auto lg:h-full"
-                    alt="twitter"
-                    width="28px"
-                    height="28px"
-                  />
-                </a>
-              </Link>
+              <div className="mt-10 space-x-8 lg:space-x-8 lg:pl-20">
+                <Link href="https://twitter.com/mmcclubdao">
+                  <a target="_blank">
+                    <Image
+                      src="/twitter.svg"
+                      className="object-cover object-right w-full h-auto lg:w-auto lg:h-full"
+                      alt="twitter"
+                      width="28px"
+                      height="28px"
+                    />
+                  </a>
+                </Link>
+                <Link href="https://discord.gg/UcWSDk88ZF">
+                  <a target="_blank">
+                    <Image
+                      src="/discord.svg"
+                      className="object-cover object-right w-full h-auto lg:w-auto lg:h-full"
+                      alt="discord"
+                      width="28px"
+                      height="28px"
+                    />
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
