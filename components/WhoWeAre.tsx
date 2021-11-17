@@ -7,7 +7,7 @@ const subheading = "Building our future together";
 
 const WhoWeAre: FC = () => {
   return (
-    <div id="who-we-are" className="blue-gray-900">
+    <div id="who-we-are" className="bg-gray-900">
       <div className="container px-6 max-w-screen-xl mx-auto">
         <Section heading={heading} subheading={subheading}>
           <Fragment>
