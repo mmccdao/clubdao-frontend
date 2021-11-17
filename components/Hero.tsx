@@ -5,8 +5,6 @@ import React, { FC } from "react";
 import BuyMeerkat from "../components/BuyMeerkat";
 import Header from "../components/Header";
 
-import marketplaces from "../data/markets.json";
-
 const Hero: FC = () => {
   return (
     <div>
