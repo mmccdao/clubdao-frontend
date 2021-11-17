@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import Hero from '../components/Hero'
 import WhoWeAre from '../components/WhoWeAre'
 import Faq from '../components/Faq'
+import Activity from '../components/Activity'
 import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
 
       <Hero />
       <WhoWeAre />
+      <Activity />
       <Faq />
 
       <Footer />
