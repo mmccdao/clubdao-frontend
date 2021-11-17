@@ -15,7 +15,7 @@ const Tile = (props: Props) => {
   return (
     <div
       className={
-        "min-h-64 color-gray-200 border-2 p-4 rounded-md border-gray-200 " +
+        "min-h-64 lg:mt-6 color-gray-200 border-2 p-4 lg:p-6 rounded-md border-gray-200 " +
         (incomplete ? "border-dashed" : "")
       }
     >
@@ -29,12 +29,12 @@ const Tile = (props: Props) => {
       </h4>
       <p className="p-2 font-extralight text-lg lg:text-xl">{description}</p>
       {image != "" && (
-        <div className="w-full my-4 h-80 relative justify-center">
+        <div className="h-52 lg:h-80 my-4 relative aspect-w-1 aspect-h-1 justify-center">
           <Image
             src={image}
             alt={title}
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
             className="rounded-lg"
           />
         </div>
