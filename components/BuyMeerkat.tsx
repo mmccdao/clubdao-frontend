@@ -18,10 +18,10 @@ const BuyMeerkat: FC = () => {
     <div className="py-12 z-50 bg-pink-800">
       <div className="px-4 mb-8 flex flex-col">
         <h2 className="font-semibold text-3xl lg:text-4xl text-center">
-          Still need a meerkat ?
+          Don't have a Meerkat yet?
         </h2>
         <p className="mt-4 font-light text-xl text-center max-w-sm mx-auto">
-          Grab your first kat on one of our supported secondary markets.
+          Adopt one on the secondary market!
         </p>
       </div>
       <div className="">
