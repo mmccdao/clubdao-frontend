@@ -45,23 +45,27 @@ const Roadmap: FC = () => {
             icon={<UserGroupIcon className="w-8 lg:w-10 inline text-white-900" />}
             title={daoTitle}
             description={genericDescription}
+            image="/placeholder.png"
           />
           <Tile
             color="bg-green-400"
             icon={<CurrencyDollarIcon className="w-8 lg:w-10 inline text-white-900" />}
             title={treasuryTitle}
             description={genericDescription}
+            image="/placeholder.png"
           />
           <Tile
             color="bg-red-400"
             icon={<ShoppingCartIcon className="w-8 lg:w-10 inline text-white-900" />}
             title={storeTitle}
             description={genericDescription}
+            image="/placeholder.png"
           />
           <Tile
             color="bg-purple-400"icon={<HandIcon className="w-8 lg:w-10 inline text-white-900" />}
             title={votingTitle}
             description={genericDescription}
+            image="/placeholder.png"
             incomplete
           />
           <Tile
@@ -69,18 +73,21 @@ const Roadmap: FC = () => {
             icon={<SparklesIcon className="w-8 lg:w-10 inline text-white-900" />}
             title={katTitle}
             description={genericDescription}
+            image="/placeholder.png"
             incomplete
           />
           <Tile
             color="bg-pink-400"icon={<TableIcon className="w-8 lg:w-10 inline text-white-900" />}
             title={marketPlaceTitle}
             description={genericDescription}
+            image="/placeholder.png"
             incomplete
           />
           <Tile
             color="bg-indigo-400"icon={<GlobeIcon className="w-8 lg:w-10 inline text-white-900" />}
             title={tbaTitle}
             description={genericDescription}
+            image="/placeholder.png"
             incomplete
           />
         </div>
