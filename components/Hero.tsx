@@ -68,8 +68,8 @@ const Hero: FC = () => {
                       src="/twitter.svg"
                       className="object-cover object-right w-full h-auto lg:w-auto lg:h-full"
                       alt="twitter"
-                      width="28px"
-                      height="28px"
+                      width="32px"
+                      height="32px"
                     />
                   </a>
                 </Link>
@@ -79,8 +79,8 @@ const Hero: FC = () => {
                       src="/discord.svg"
                       className="object-cover object-right w-full h-auto lg:w-auto lg:h-full"
                       alt="discord"
-                      width="28px"
-                      height="28px"
+                      width="32px"
+                      height="32px"
                     />
                   </a>
                 </Link>
