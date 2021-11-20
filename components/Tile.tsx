@@ -7,11 +7,10 @@ interface Props {
   incomplete?: boolean;
   title: string;
   color: string;
-  image: string;
 }
 
 const Tile = (props: Props) => {
-  const { color, description, image, icon, incomplete, title } = props;
+  const { color, description, icon, incomplete, title } = props;
   return (
     <div
       className={
@@ -27,18 +26,7 @@ const Tile = (props: Props) => {
         </span>
         {title}
       </h4>
-      <p className="p-2 font-extralight text-lg lg:text-xl">{description}</p>
-      {image != "" && (
-        <div className="h-52 lg:h-80 my-4 relative aspect-w-1 aspect-h-1 justify-center">
-          <Image
-            src={image}
-            alt={title}
-            layout="fill"
-            objectFit="contain"
-            className="rounded-lg"
-          />
-        </div>
-      )}
+      { description != "" && <p className="p-2 font-extralight text-lg lg:text-xl">{description}</p>}
     </div>
   );
 };

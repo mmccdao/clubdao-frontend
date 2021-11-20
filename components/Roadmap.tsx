@@ -15,14 +15,13 @@ import styles from '../styles/Home.module.css'
 
 const heading = "Roadmap";
 const subheading = "Developed by decentralized teams";
-const daoTitle = "ClubDAO";
-const treasuryTitle = "Treasury";
+const daoTitle = "ClubDAO Launch";
+const treasuryTitle = "Multisig based Treasury";
 const storeTitle = "MMCC merch store";
 const votingTitle = "On-chain voting mechanism";
-const katTitle = "$KAT token airdrop";
+const katTitle = "$CLUB token airdrop";
 const marketPlaceTitle = "Meerkatplace and escrow trade";
-const genericDescription =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit soluta quod vitae.";
+const genericDescription = "";
 
 const Roadmap: FC = () => {
   return (
@@ -46,27 +45,25 @@ const Roadmap: FC = () => {
             icon={<UserGroupIcon className="w-8 lg:w-10 inline text-white-900" />}
             title={daoTitle}
             description={genericDescription}
-            image="/placeholder.png"
+          />
+          <Tile
+            color="bg-purple-400"icon={<HandIcon className="w-8 lg:w-10 inline text-white-900" />}
+            title={votingTitle}
+            description={genericDescription}
+            incomplete
           />
           <Tile
             color="bg-green-400"
             icon={<CurrencyDollarIcon className="w-8 lg:w-10 inline text-white-900" />}
             title={treasuryTitle}
             description={genericDescription}
-            image="/placeholder.png"
+            incomplete
           />
           <Tile
             color="bg-red-400"
             icon={<ShoppingCartIcon className="w-8 lg:w-10 inline text-white-900" />}
             title={storeTitle}
             description={genericDescription}
-            image="/placeholder.png"
-          />
-          <Tile
-            color="bg-purple-400"icon={<HandIcon className="w-8 lg:w-10 inline text-white-900" />}
-            title={votingTitle}
-            description={genericDescription}
-            image="/placeholder.png"
             incomplete
           />
           <Tile
@@ -74,14 +71,12 @@ const Roadmap: FC = () => {
             icon={<SparklesIcon className="w-8 lg:w-10 inline text-white-900" />}
             title={katTitle}
             description={genericDescription}
-            image="/placeholder.png"
             incomplete
           />
           <Tile
             color="bg-pink-400"icon={<TableIcon className="w-8 lg:w-10 inline text-white-900" />}
             title={marketPlaceTitle}
             description={genericDescription}
-            image="/placeholder.png"
             incomplete
           />
         </div>
