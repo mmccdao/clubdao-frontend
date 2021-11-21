@@ -17,6 +17,13 @@ const Home: NextPage = () => {
         <title>ClubDAO</title>
         <meta name="description" content="A community-owned and operated organization for Meerkats to grow, innovate, have fun, and make impact in the Solana NFT space together" />
         <link rel="icon" href="/favicon.ico" />
+
+        {/* Search engine */}
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot" content="index,follow" />
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot" content="index,follow" />
+        <meta name="google" content="nositelinkssearchbox" />
       </Head>
 
       <Hero />
