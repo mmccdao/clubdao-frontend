@@ -35,6 +35,16 @@ const Home: NextPage = () => {
         <meta property="og:site_name" content="ClubDAO" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:author" content="ClubDAO" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@mmcclubdao" />
+        <meta name="twitter:creator" content="@mmcclubdao" />
+        <meta name="twitter:url" content="https://mmcountry.club" />
+        <meta name="twitter:title" content="ClubDAO" />
+        <meta name="twitter:description" content="A community-owned and operated organization for Meerkats to grow, innovate, have fun, and make impact in the Solana NFT space together" />
+        <meta name="twitter:image" content="https://clubdao-frontend-git-feature-landing-page-mmccdao.vercel.app/logo.jpeg" />
+        <meta name="twitter:image:alt" content="A community-owned and operated organization for Meerkats to grow, innovate, have fun, and make impact in the Solana NFT space together" />
       </Head>
 
       <Hero />
