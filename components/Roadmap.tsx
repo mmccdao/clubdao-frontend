@@ -34,7 +34,7 @@ const Roadmap: FC = () => {
               A summary of ClubDAO projects that will be delivered across
               multiple releases. Here you will find an overview of the goals, as
               well as descriptions of the main features, links to associated
-              partenerships and status updates.
+              partnerships and status updates.
             </p>
           </Fragment>
         </Section>
