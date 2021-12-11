@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React, { FC, Fragment, useState, useEffect } from "react";
 
@@ -42,7 +43,14 @@ const Header: FC = () => {
               className="inline-flex items-center"
             >
               {/* TODO Add logo (SVG) */}
-              <span className="ml-2 text-3xl font-bold tracking-wide text-gray-100 uppercase">
+              <Image
+                src="/logo.png"
+                alt="ClubDAO logo"
+                layout="fixed"
+                width={48}
+                height={48}
+              />
+              <span className="ml-4 text-3xl font-bold tracking-wide text-gray-200 uppercase">
                 ClubDAO
               </span>
             </a>
