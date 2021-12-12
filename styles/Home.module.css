@@ -1,23 +1,11 @@
 .container {
-  padding: 0 2rem;
+  background-color: #000;
+  color: #FEFEFE;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title {
-  text-align: center;
+.anchor {
+  display: block;
+  position: relative;
+  top: -75px;
+  visibility: hidden;
 }
